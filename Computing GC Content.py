@@ -1,3 +1,10 @@
+# This peice of code finds which DNA sequence in a FASTA file has the highest GC content.
+# It first defines a function to calculate GC% for any DNA string.
+# Then, it reads the FASTA data, stores sequence names with their DNA,
+# computes each sequence's GC content, and identifies the one with the highest value.
+# Finally, it prints that sequence's label and its GC percentage.
+
+
 def gc_content(dna):
    
     return (dna.count('G') + dna.count('C')) / len(dna) * 100
@@ -134,3 +141,4 @@ CAGATATGATAGCGCCAGGCTCTTCTCTTACTCTGC
 label, gc_value = highest_gc_content(fasta_sample)
 print(label)
 print(f"{gc_value:.6f}")
+
