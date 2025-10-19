@@ -1,3 +1,9 @@
+
+# This peice of  code takes a DNA sequence and returns its reverse complement.
+# It first defines which base pairs with which (A↔T, C↔G),
+# then reverses the DNA string and replaces each base with its complement.
+# Finally, it prints the reverse complement of the given DNA sequence.
+
 def reverse_complement_dna(dna: str) -> str:
    
     complement = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'}
@@ -8,3 +14,4 @@ dna_string = "CCATCTTTATTCCTCCGTCAGGGGTAACTTGGACTTATCTCCGTTGGAGAATCGTATCCGGTGTGG
 reverse_complement = reverse_complement_dna(dna_string)
 
 print(reverse_complement)
+
